@@ -15,7 +15,7 @@ do {
 printf("\n\nMINUTOS: ");
 scanf("%d", &minutos);
 if (minutos< 0 || minutos> 59)
-printf("\nMinutos invalidos.");
+printf("\nMinutos invalidos. asddsadsasda");
 } while(minutos<0 || minutos>59);
     printf("\n\nFoi marcado %02d:%02d", horas, minutos);
     getchar();
