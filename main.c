@@ -10,15 +10,21 @@ int main()
     soma = 0;
     media = 0;
 
-    do{
-        do{
-            printf("Classificação:");
-            scanf("%i", &classi);
-            if(classi < -1 || classi >20)
-            {
-                printf("Valor inválido");
-            }
-
+int horas, minutos;
+do {
+printf("\n\nHORAS: ");
+scanf("%d", &horas);
+if (horas<0 || horas>23)
+printf("\nHoras invalidas.");
+} while (horas < 0 || horas > 23);
+do {
+printf("\n\nMINUTOS: ");
+scanf("%d", &minutos);
+if (minutos< 0 || minutos> 59)
+printf("\nMinutos invalidos. asddsadsasda");
+} while(minutos<0 || minutos>59);
+    printf("\n\nFoi marcado %02d:%02d", horas, minutos);
+    getchar();
         }while(classi!=-1);
                 soma=soma+classi;
 
